@@ -28,17 +28,17 @@ public class D03_softAssert {
 
         // 1- Ilk harf Buyuk harf olmali
         boolean ilkHarfKontrolu= sifre.charAt(0)>='A' && sifre.charAt(0)<='Z';
-        Assert.assertTrue(ilkHarfKontrolu,"Ilk harf buyuk harf olmali");
+        Assert.assertTrue(ilkHarfKontrolu,"Ilk harf büyük harf olmalidir");
 
         // 2- Son harf kucuk harf olmali
         boolean sonHarfKontrolu= sifre.charAt(sifre.length()-1)>='a' && sifre.charAt(sifre.length()-1)<='z';
-        Assert.assertTrue(sonHarfKontrolu,"Son harf kucuk harf olmali");
+        Assert.assertTrue(sonHarfKontrolu,"Son harf kucuk harf olmalidir");
 
         // 3- Sifre bosluk icermemeli
-        Assert.assertFalse(sifre.contains(" "),"Sifre bosluk icermemeli");
+        Assert.assertFalse(sifre.contains(" "),"Sifre bosluk icermemelidir");
 
         // 4- Uzunlugu en az 8 karakter olmali
-        Assert.assertTrue(sifre.length()>=8, "uzunluk en az 8 karakter olmali");
+        Assert.assertTrue(sifre.length()>=8, "Sifrenin Uzunlugu en az 8 karakterden olusmalidir");
 
         // 5- Tüm sartlari sagliyorsa sifre basari ile kaydedildi yazdirin
         System.out.println("Sifreniz basari ile kaydedildi");
