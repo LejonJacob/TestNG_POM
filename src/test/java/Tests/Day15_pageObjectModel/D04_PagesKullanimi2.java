@@ -2,7 +2,7 @@ package Tests.Day15_pageObjectModel;
 
 import Pages.AmazonPage;
 import Utilities.Driver;
-import Utilities.ReusablesMethods;
+import Utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,7 +29,7 @@ public class D04_PagesKullanimi2 {
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
 
 
-        ReusablesMethods.waiting(3);
+        ReusableMethods.waiting(3);
         Driver.closeDriver();
     }
 

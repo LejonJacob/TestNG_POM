@@ -1,6 +1,6 @@
 package Utilities;
 
-public class ReusablesMethods {
+public class ReusableMethods {
 
     public static void waiting(int saniye){
 

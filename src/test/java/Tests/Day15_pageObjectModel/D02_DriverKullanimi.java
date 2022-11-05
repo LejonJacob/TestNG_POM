@@ -1,7 +1,7 @@
 package Tests.Day15_pageObjectModel;
 
 import Utilities.Driver;
-import Utilities.ReusablesMethods;
+import Utilities.ReusableMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -41,7 +41,7 @@ public class D02_DriverKullanimi {
 
         softAssert.assertTrue(actualUrlWise.contains(expectedUrlWise), "Url wisequarter icermiyor");
 
-        ReusablesMethods.waiting(3);
+        ReusableMethods.waiting(3);
 
         softAssert.assertAll();
 
