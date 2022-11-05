@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class D04_SoftAssert extends TestBase {
+public class D04_SoftAssert2 extends TestBase {
 
 
         /*
@@ -85,6 +85,8 @@ public class D04_SoftAssert extends TestBase {
         }
 
         softAssert.assertEquals(actualKurlarListesi,expectedKurlarList,"Kurlar listesi farkli");
+
+
         softAssert.assertAll();
 
         threadSleep(5);
