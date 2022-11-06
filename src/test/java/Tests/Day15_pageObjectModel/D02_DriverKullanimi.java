@@ -42,9 +42,10 @@ public class D02_DriverKullanimi {
 
         softAssert.assertTrue(actualUrlWise.contains(expectedUrlWise), "Url wisequarter icermiyor");
 
-        ReusableMethods.waiting(3);
 
+        ReusableMethods.waiting(3);
         softAssert.assertAll();
+        Driver.closeDriver();
 
 
     }

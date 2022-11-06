@@ -50,7 +50,7 @@ public class D01_DependsOnMethods extends TestBaseClass {
 
         WebElement searchBoxElement = driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]"));
 
-        searchBoxElement.sendKeys("Elma" + Keys.ENTER);
+        searchBoxElement.sendKeys("Nutella" + Keys.ENTER);
 
         WebElement sonucYazisiElementi = driver.findElement(By.xpath("//div[@class=\"a-section a-spacing-small a-spacing-top-small\"]"));
 

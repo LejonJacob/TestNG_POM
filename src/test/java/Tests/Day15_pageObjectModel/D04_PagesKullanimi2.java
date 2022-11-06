@@ -33,7 +33,7 @@ public class D04_PagesKullanimi2 {
 
     }
 
-    @Test(dependsOnMethods = "bicycleTesti")
+    @Test(dependsOnMethods = "bicycleTesti", groups = "smoke")
     public void javaTesti(){
 
         amazonPage.aramaKutusu.clear();
@@ -46,7 +46,7 @@ public class D04_PagesKullanimi2 {
 
     }
 
-    @Test
+    @Test(groups="smoke")
     public void bicycleTesti(){
 
         Driver.getDriver().get("https://www.amazon.com");
