@@ -11,10 +11,10 @@ public class AutomatExercisePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(linkText = " Signup / Login")
+    @FindBy(xpath = "//a[@href=\"/login\"]")
     public WebElement signUpLinki;
 
-    @FindBy(xpath = "//h2[text()='Login to your account']")
+    @FindBy(xpath = "//h2[text()=\"Login to your account\"]")
     public WebElement loginAccountElementi;
 
     @FindBy(xpath = "(//input[@name='email'])[1]")
@@ -23,16 +23,16 @@ public class AutomatExercisePage {
     @FindBy(xpath = "(//input[@name='password'])[1]")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//button[text()='Login']")
+    @FindBy(xpath = "//button[text()=\"Login\"]")
     public WebElement loginButonu;
 
-    @FindBy(xpath = "//*[text()=' Logged in as ']")
+    @FindBy(xpath = "//*[text()=\" Logged in as \"]")
     public WebElement loggedinAs;
 
-    @FindBy(xpath = "//a[@href='/delete_account']")
+    @FindBy(xpath = "//a[@href=\"/delete_account\"]")
     public WebElement deleteAccountButton;
 
-    @FindBy (xpath = "//*[text()='Account Deleted!']")
+    @FindBy (xpath = "//*[text()=\"Account Deleted!\"]")
     public WebElement accountDeletedlocation;
 
 
