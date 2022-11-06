@@ -33,22 +33,25 @@ public class D06_AutomationExercise {
         softAssert.assertTrue(automationExercisePage.loginAccountElementi.isDisplayed());
 
         //6. Enter correct email address and password
-        automationExercisePage.emailKutusu.sendKeys("aurora@gmail.com");
-        automationExercisePage.passwordKutusu.sendKeys("aurora");
+        automationExercisePage.emailKutusu.sendKeys("aurora1@gmail.com");
+        automationExercisePage.passwordKutusu.sendKeys("123456");
 
         //7. Click 'login' button
         automationExercisePage.loginButonu.click();
 
         //8. Verify that 'Logged in as username' is visible
+        softAssert.assertTrue(automationExercisePage.loggedinAs.isDisplayed());
 
         //9. Click 'Delete Account' button
-        //10. Verify that 'ACCOUNT DELETED!' is visible
+        automationExercisePage.deleteAccountButton.click();
 
-        //     mail=aurora@gmail.com
-        //     password=aurora
+        //10. Verify that 'ACCOUNT DELETED!' is visible
+        softAssert.assertTrue(automationExercisePage.accountDeletedlocation.isDisplayed());
 
         softAssert.assertAll();
         ReusableMethods.waiting(5);
         Driver.closeDriver();
+
     }
+
 }
