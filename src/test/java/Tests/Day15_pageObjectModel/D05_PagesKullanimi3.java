@@ -33,7 +33,8 @@ public class D05_PagesKullanimi3 {
         Assert.assertTrue(facebookPage.girilemediYaziElementi.isDisplayed());
 
         ReusableMethods.waiting(5);
-
+        Driver.closeDriver();
 
     }
+
 }

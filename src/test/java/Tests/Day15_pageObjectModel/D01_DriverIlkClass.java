@@ -49,6 +49,7 @@ public class D01_DriverIlkClass {
 
         Driver.getDriver().get("https://www.wisequarter.com");
 
+        Driver.closeDriver();
 
     }
 

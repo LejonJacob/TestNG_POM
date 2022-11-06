@@ -28,9 +28,9 @@ public class D04_PagesKullanimi2 {
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
 
-
         ReusableMethods.waiting(3);
         Driver.closeDriver();
+
     }
 
     @Test(dependsOnMethods = "bicycleTesti")
@@ -43,6 +43,7 @@ public class D04_PagesKullanimi2 {
         String expectedKelime="java";
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
+
     }
 
     @Test

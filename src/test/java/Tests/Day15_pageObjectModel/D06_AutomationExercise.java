@@ -21,7 +21,7 @@ public class D06_AutomationExercise {
         String expectedUrl="https://automationexercise.com/";
         String actualUrl=Driver.getDriver().getCurrentUrl();
 
-        softAssert.assertEquals(actualUrl,expectedUrl,"homepage'de degislsiniz");
+        softAssert.assertEquals(actualUrl,expectedUrl,"Homepage'de degilsiniz.");
 
         //4. Click on 'Signup / Login' button
         AutomatExercisePage automationExercisePage=new AutomatExercisePage();
@@ -43,6 +43,7 @@ public class D06_AutomationExercise {
 
         //9. Click 'Delete Account' button
         //10. Verify that 'ACCOUNT DELETED!' is visible
+
         //     mail=aurora@gmail.com
         //     password=aurora
 
