@@ -33,7 +33,7 @@ public class D03_EndToEndTest {
 
         MyCoursedemyPage myCoursedemyPage = new MyCoursedemyPage();
 
-        // Gecerli kullanici adi ve sifre girerek sisteme login olun
+        // Gecerli bir kullanici adi ve password girerek login yapin
         myCoursedemyPage.loginMethod();
 
         // Instructor linkini tiklayin
@@ -69,7 +69,7 @@ public class D03_EndToEndTest {
         // Indirim kutusuna %50 yazalim
         myCoursedemyPage.discountKutusu.sendKeys(ConfigReader.getProperty("myDiscount"));
 
-        // tekrar next butonuna basalim
+        // Tekrar next butonuna basalim
         myCoursedemyPage.ilkNextButonu.click();
 
         // Tekrar next butonuna basalim
