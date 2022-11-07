@@ -13,6 +13,11 @@ public class Driver {
 
     static WebDriver driver;
 
+    private Driver(){
+
+
+    }
+
     public static WebDriver getDriver() {
 
         if (driver==null){ // method ilk cagrildiginda driver degeri atanmamis oldugundan deger atar
