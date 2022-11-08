@@ -7,6 +7,7 @@
             
             <class name="Tests.Day16_PageObjectModel.D02_xmlFiles">
                 <methods>
+                    <!-- sadece include olarak belirtilen method'lari calistirir-->
                     <include name="test01"></include>
                     <include name="test02"></include>
                     <include name="test05"></include>
@@ -15,6 +16,7 @@
 
             <class name="Tests.Day16_PageObjectModel.D03_xmlFiles2">
                 <methods>
+                    <!--exclude olarak belirtilen method'larin disindaki tum method'lari calistirir -->
                     <exclude name="test06"></exclude>
                     <exclude name="test08"></exclude>
                 </methods>

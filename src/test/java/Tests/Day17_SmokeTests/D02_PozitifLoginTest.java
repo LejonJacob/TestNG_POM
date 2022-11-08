@@ -1,6 +1,5 @@
 package Tests.Day17_SmokeTests;
 
-import Pages.AmazonPage;
 import Pages.MyCoursedemyPage;
 import Utilities.ConfigReader;
 import Utilities.Driver;
@@ -8,7 +7,7 @@ import Utilities.ReusableMethods;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class D01_PozitifLoginTest {
+public class D02_PozitifLoginTest {
 
     @Test
     public void pozitifLoginTest(){

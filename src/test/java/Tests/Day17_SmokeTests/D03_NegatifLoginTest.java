@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class D02_NegatifLoginTest {
+public class D03_NegatifLoginTest {
 
 
         // Mycoursedemy anasayfasina gidin
