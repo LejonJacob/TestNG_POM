@@ -13,7 +13,7 @@ public class D02_PozitifLoginTest {
     public void pozitifLoginTest(){
 
         // Mycoursedemy anasayfasina gidin
-        // login linkine basin
+        // Login linkine basin
         // Kullanici email'i olarak valid email girin
         // Kullanici sifresi olarak valid sifre girin
         // Login butonuna basarak login olun
@@ -21,7 +21,6 @@ public class D02_PozitifLoginTest {
 
         // 1 - Mycoursedemy anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("myCourseUrl"));
-
 
 
         // 2 - Login linkine basin
@@ -37,7 +36,7 @@ public class D02_PozitifLoginTest {
         // 4 - Kullanici sifresi olarak valid sifre girin
         myCoursedemyPage.passwordBox.sendKeys(ConfigReader.getProperty("myCoursePassword"));
 
-        ReusableMethods.waiting(3);
+        ReusableMethods.waiting(2);
 
         // 5 - Login butonuna basarak login olun
         myCoursedemyPage.loginButton.click();
