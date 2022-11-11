@@ -27,7 +27,7 @@ public class SQ04 {
     SoftAssert softAssert = new SoftAssert();
 
     @Test
-    public void saucedemoTest1 (){
+    public void sauceDemoTest1 (){
 
         Driver.getDriver().get("https://www.saucedemo.com/");
 
@@ -54,7 +54,7 @@ public class SQ04 {
 
 
     @Test
-    public void saucedemoTest2 () {
+    public void sauceDemoTest2 () {
 
 
         Driver.getDriver().get("https://www.saucedemo.com/");
