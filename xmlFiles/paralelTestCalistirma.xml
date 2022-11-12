@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Bazinda Paralel Calistirma" parallel="tests" thread-count="2" verbose="4">
+
+    <test name="Paralel Calistirma Ilk Browser">
+        <classes>
+            <class name="Tests.Day14_DependsOnMethods_SoftAssert.D02_DependsOnMethods"></class>
+            <class name="Tests.Day15_pageObjectModel.D03_PagesKullanimi"></class>
+
+        </classes>
+
+    </test>
+
+    <test name="Paralel Calistirma Ikinci Browser">
+        <classes>
+            <class name="Tests.Day15_pageObjectModel.D02_DriverKullanimi"></class>
+            <class name="Tests.Day14_DependsOnMethods_SoftAssert.D03_SoftAssert"></class>
+
+        </classes>
+
+    </test>
+    
+</suite>

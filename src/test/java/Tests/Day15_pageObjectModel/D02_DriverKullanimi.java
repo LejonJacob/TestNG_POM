@@ -32,6 +32,8 @@ public class D02_DriverKullanimi {
         String expectedKelime = "Nutella";
         String actualKelime = sonucYazisiElementi.getText();
 
+        ReusableMethods.waiting(1);
+
         Assert.assertTrue(actualKelime.contains(expectedKelime), "Arama sonucu Nutella icermiyor");
 
         // 3- Wisequarter anasayfasina gidip, url'in wisequarter icerdigini dogrulayin

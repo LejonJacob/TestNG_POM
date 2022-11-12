@@ -30,7 +30,7 @@ public class MyCoursedemyPage {
     @FindBy(xpath = "//input[@id=\"login-password\"]")
     public WebElement passwordBox;
 
-    @FindBy(xpath = "//button[@class=\"btn red radius-5 mt-4 w-100\"]")
+    @FindBy(xpath = "//button[text()=\"Login\"]")
     public WebElement loginButton;
 
     @FindBy(linkText = "My courses")
