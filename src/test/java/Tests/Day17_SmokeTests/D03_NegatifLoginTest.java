@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class D03_NegatifLoginTest {
 
 
-        // Mycoursedemy anasayfasina gidin
+        // MyCoursedemy anasayfasina gidin
         // Login linkine basin
         // Üc farkli test method'u ile yanlis bilgilerle giris yapilamadigini test edin
         // 1- Yanlis kullanici adi, gecerli password
@@ -26,11 +26,13 @@ public class D03_NegatifLoginTest {
     @BeforeClass
     public void setup(){
 
-        // Mycoursedemy anasayfasina gidin
+        // MyCoursedemy anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("myCourseUrl"));
 
-        ReusableMethods.waiting(2);
+        ReusableMethods.waiting(1);
         myCoursedemyPage.cookies.click();
+
+        ReusableMethods.waiting(2);
 
         // Login linkine basin
         myCoursedemyPage.loginLink.click();
