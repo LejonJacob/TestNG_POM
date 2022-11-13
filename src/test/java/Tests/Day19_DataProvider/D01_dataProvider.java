@@ -36,9 +36,11 @@ public class D01_dataProvider {
         // Arama sonuclarinin aranan kelime icerdigini test edin
         String actualSonucYazisi=amazonPage.aramaSonucElementi.getText();
 
-        ReusableMethods.bekle(3);
 
         Assert.assertTrue(actualSonucYazisi.contains(aranacakKelime));
+
+        ReusableMethods.waiting(3);
+        Driver.closeDriver();
 
     }
 

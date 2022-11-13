@@ -34,16 +34,20 @@ public class D02_negativeLoginDataProvider {
     // giris yapilamadigini test edin
 
     @Test(dataProvider = "kullaniciDataProvider")
-    public void negatifCokluTest(String email,String password){
+    public void negatifCokluTest(String email,String password) {
 
         // Mycoursedemy anasayfasina gidin
-        Driver.getDriver().get(ConfigReader.getProperty("myUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("myCourseUrl"));
 
-        // login linkine basin
-        MyCoursedemyPage myCoursedemyPage=new MyCoursedemyPage();
+        // Login linkine basin
+        MyCoursedemyPage myCoursedemyPage = new MyCoursedemyPage();
+
+        myCoursedemyPage.cookies.click();
+        ReusableMethods.waiting(2);
+
         myCoursedemyPage.loginLink.click();
 
-        // 1- verilen listeden kullanici adi ve password yazalim
+        // 1- Verilen listeden kullanici adi ve password yazalim
         myCoursedemyPage.emailBox.sendKeys(email);
         myCoursedemyPage.passwordBox.sendKeys(password);
 

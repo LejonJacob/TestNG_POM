@@ -1,6 +1,7 @@
 package Tests.Day19_CrossBrowserTests;
 
 import Utilities.ConfigReader;
+import Utilities.ReusableMethods;
 import Utilities.TestBaseCross;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,26 +15,29 @@ public class D02_NegativeLoginTesti extends TestBaseCross {
     public void negativeTest(){
 
         // MyCoursedemy anasayfaya gidin
-        driver.get(ConfigReader.getProperty("myUrl"));
+        driver.get(ConfigReader.getProperty("myCourseUrl"));
+
+        driver.findElement(By.xpath("//a[@onclick=\"cookieAccept();\"]")).click();
+        ReusableMethods.waiting(2);
 
         // Login butonuna basin
-        WebElement loginLinki=driver.findElement(By.xpath("//a[text()='Log in']"));
+        WebElement loginLinki=driver.findElement(By.xpath("//a[text()=\"Log in\"]"));
         loginLinki.click();
 
 
         // Email ve password icin gecersiz degerler girin
-        driver.findElement(By.xpath("//input[@id='login-email']"))
-                .sendKeys(ConfigReader.getProperty("myYanlisEmail"));
+        driver.findElement(By.xpath("//input[@id=\"login-email\"]"))
+                .sendKeys(ConfigReader.getProperty("myCourseYanlisMail"));
 
-        driver.findElement(By.xpath("//input[@id='login-password']"))
-                .sendKeys(ConfigReader.getProperty("myYanlisPassword"));
+        driver.findElement(By.xpath("//input[@id=\"login-password\"]"))
+                .sendKeys(ConfigReader.getProperty("myCourseYanlisPassword"));
 
         // Login butonuna basin
-        driver.findElement(By.xpath("//button[text()='Login']")).click();
+        driver.findElement(By.xpath("//button[text()=\"Login\"]")).click();
 
 
         // Giris yapilamadigini test edin
-        Assert.assertTrue(driver.findElement(By.xpath("//a[text()='Log in']")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//a[text()=\"Log in\"]")).isDisplayed());
 
     }
 
