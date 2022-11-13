@@ -11,20 +11,20 @@
         <test> </test> taglari arasinda istedigimiz kadar olustururuz
         <test> altinda package/class veya method olarak istedigimiz kadar test ekleyebiliriz
 
-        <test> olarak ayirdigimiz bolumlerin
+        <test> olarak ayirdigimiz bölümlerin
         istedigimiz browser ile calismasi icin parametre olarak browser girmeliyiz
 
         -->
 
     <test name="Cross Browser Calistirma 1. browser">
-        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="Tests.Day19_CrossBrowserTests.D01_amazonSearchTest"></class>
         </classes>
     </test>
 
     <test name="Cross Browser Calistirma 2. Browser">
-        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="edge"></parameter>
         <classes>
             <class name="Tests.Day19_CrossBrowserTests.D02_NegativeLoginTesti"></class>
         </classes>

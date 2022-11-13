@@ -36,8 +36,10 @@ public class D02_NegativeLoginTesti extends TestBaseCross {
         driver.findElement(By.xpath("//button[text()=\"Login\"]")).click();
 
 
+        ReusableMethods.waiting(2);
+
         // Giris yapilamadigini test edin
-        Assert.assertTrue(driver.findElement(By.xpath("//a[text()=\"Log in\"]")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//a[@class=\"btn btn-sign-in-simple\"]")).isDisplayed());
 
     }
 

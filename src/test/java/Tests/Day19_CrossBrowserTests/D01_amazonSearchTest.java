@@ -1,6 +1,8 @@
 package Tests.Day19_CrossBrowserTests;
 
 import Utilities.ConfigReader;
+import Utilities.Driver;
+import Utilities.ReusableMethods;
 import Utilities.TestBaseCross;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -24,6 +26,9 @@ public class D01_amazonSearchTest extends TestBaseCross {
 
         String expectedKelime="Nutella";
         Assert.assertTrue(actualSonucyazisi.contains(expectedKelime));
+
+        ReusableMethods.waiting(1);
+        Driver.closeDriver();
 
     }
 
