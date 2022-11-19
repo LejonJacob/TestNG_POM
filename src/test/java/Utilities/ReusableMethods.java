@@ -14,17 +14,17 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
 
-    public class ReusableMethods {
+public class ReusableMethods {
 
-        public static void waiting( int saniye){
+    public static void waiting( int saniye){
 
-            try {
-                Thread.sleep(saniye*1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+
+    }
 
     public static String getScreenshot(String name) throws IOException {
 
